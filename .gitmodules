@@ -1,0 +1,3 @@
+[submodule "vim-conf"]
+	path = vim
+	url = https://github.com/khuevu/vim-conf.git
