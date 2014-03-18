@@ -115,6 +115,14 @@ install_oh_my_zsh_custom() {
   done
 }
 
+update_zshrc_path() {
+  echo "\033[0;34mCopying current PATH and adding it to ~/.zshrc.\033[0m"
+  sed -i -e "/export PATH=/ c\\
+  export PATH=\"$PATH\"
+  " ~/.zshrc
+}
+
 
 install_dotfiles
 install_oh_my_zsh_custom
+update_zshrc_path
